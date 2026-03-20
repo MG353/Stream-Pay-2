@@ -81,7 +81,7 @@ const walletScreen = `
         <div class="act-icon ai-teal"><i class="fa-solid fa-bolt"></i></div>
         <div class="act-info">
           <div class="act-title">Instant Cash Out</div>
-          <div class="act-sub">$125 available instantly</div>
+          <div class="act-sub">$1,452 available instantly</div>
         </div>
         <div class="visa-chip">
           <span class="visa-text">VISA</span>
