@@ -31,8 +31,8 @@ const walletScreen = `
         <path id="chart-line-path" d="M0,108 Q50,105 100,100 Q160,92 210,78 Q255,62 300,42 Q330,28 355,14 L362,12" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
         <circle id="chart-dot" cx="355" cy="14" r="4" fill="#22c55e"/>
         <circle id="chart-dot-outer" cx="355" cy="14" r="8" fill="rgba(34,197,94,.18)"/>
-        <text x="158" y="54" fill="#9ca3af" font-size="10" font-family="Inter" class="chart-label">+$18.12</text>
-        <text x="220" y="40" fill="#9ca3af" font-size="10" font-family="Inter" class="chart-label">+$12.16</text>
+        <text x="158" y="54" fill="#9ca3af" font-size="10" font-family="Inter" class="chart-label">+$12.16</text>
+        <text x="220" y="40" fill="#9ca3af" font-size="10" font-family="Inter" class="chart-label">+$18.12</text>
         <text x="50"  y="80" fill="#9ca3af" font-size="10" font-family="Inter" class="chart-label">+$7.50</text>
       </svg>
       <div class="chart-axis" id="chart-axis"><span>9AM</span><span>12PM</span><span>3PM</span></div>
