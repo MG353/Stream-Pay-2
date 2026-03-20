@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamPay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+
+
+    <!-- Header: uses the full logo PNG cropped to just the S mark portion -->
+    <header class="header">
+      <div class="logo-container">
+        <img src="StreamPay Icon.png" alt="StreamPay" class="logo-s-img">
+        <span class="logo-wordmark">
+          <span class="logo-stream">Stream</span><span class="logo-pay">Pay</span>
+        </span>
+      </div>
+      <button class="profile-btn" id="profile-btn" onclick="toggleProfile()">
+        <i class="fa-regular fa-user"></i>
+      </button>
+    </header>
+
+    <!-- Profile Dropdown -->
+    <div class="profile-overlay hidden" id="profile-overlay" onclick="closeProfile()"></div>
+    <div class="profile-dropdown hidden" id="profile-dropdown">
+      <div class="profile-dropdown-header">
+        <div class="profile-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div>
+          <p class="profile-name">John Doe</p>
+          <p class="profile-email">john.doe@streampay</p>
+        </div>
+      </div>
+      <div class="profile-divider"></div>
+
+      <button class="profile-menu-item" onclick="goToLearn()">
+        <div class="menu-icon-wrap safety-icon">🛡️</div>
+        <div class="menu-item-text">
+          <span class="menu-title">Safety &amp; Education Hub</span>
+          <span class="menu-desc">GENIUS Act protections &amp; how stablecoins work</span>
+        </div>
+        <i class="fa-solid fa-chevron-right menu-chev"></i>
+      </button>
+
+      <button class="profile-menu-item" onclick="closeProfile()">
+        <div class="menu-icon-wrap settings-icon">⚙️</div>
+        <div class="menu-item-text">
+          <span class="menu-title">Settings</span>
+          <span class="menu-desc">Account, notifications, security</span>
+        </div>
+        <i class="fa-solid fa-chevron-right menu-chev"></i>
+      </button>
+
+      <button class="profile-menu-item" onclick="closeProfile()">
+        <div class="menu-icon-wrap help-icon">💬</div>
+        <div class="menu-item-text">
+          <span class="menu-title">Help &amp; Support</span>
+          <span class="menu-desc">Chat with us 24/7</span>
+        </div>
+        <i class="fa-solid fa-chevron-right menu-chev"></i>
+      </button>
+    </div>
+
+    <!-- Main Content -->
+    <main id="app-content" class="content-scroll"></main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <!-- Stream nav: real icon -->
+      <button class="nav-item active" data-target="wallet" id="nav-wallet">
+        <img src="StreamPay Icon.png" alt="S" class="nav-s-img">
+        <span>Stream</span>
+      </button>
+
+      <button class="nav-item" data-target="cash" id="nav-cash">
+        <i class="fa-regular fa-credit-card nav-fa"></i>
+        <span>Pay</span>
+      </button>
+
+      <button class="nav-item" data-target="send" id="nav-send">
+        <i class="fa-solid fa-arrow-right-arrow-left nav-fa"></i>
+        <span>Request</span>
+      </button>
+
+      <button class="nav-item" data-target="stream" id="nav-stream">
+        <i class="fa-regular fa-rectangle-list nav-fa"></i>
+        <span>Wallet</span>
+      </button>
+    </nav>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
